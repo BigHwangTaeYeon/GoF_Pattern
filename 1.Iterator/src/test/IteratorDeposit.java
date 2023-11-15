@@ -2,7 +2,7 @@ package test;
 
 import java.util.ArrayList;
 
-public class IteratorDeposit {
+public class IteratorDeposit implements Iterator{
     private ArrayList<Deposit> data;
 
     private int index;
@@ -12,12 +12,14 @@ public class IteratorDeposit {
         this.index = -1;
     }
 
+    @Override
     public boolean next() {
         this.index++;
         return data.size() > index;
     }
-    
-    public Deposit getDeposit() {
+
+    @Override
+    public Object current() {
         return data.get(this.index);
     }
     

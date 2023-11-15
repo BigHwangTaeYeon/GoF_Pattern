@@ -3,7 +3,7 @@ package test;
 import java.util.ArrayList;
 
 
-public class ArrayDeposit {
+public class ArrayDeposit implements Aggregator{
     private ArrayList<Deposit> list = new ArrayList<Deposit>();
 
     public ArrayDeposit(Deposit[] list) {
@@ -12,7 +12,8 @@ public class ArrayDeposit {
         }
     }
 
-    public IteratorDeposit iterator() {
+    @Override
+    public Iterator iterator() {
         return new IteratorDeposit(list);
     }
 }

@@ -1,6 +1,6 @@
 import test.ArrayDeposit;
 import test.Deposit;
-import test.IteratorDeposit;
+import test.Iterator;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -28,10 +28,10 @@ public class App {
         };
 
         ArrayDeposit array = new ArrayDeposit(dp);
-        IteratorDeposit itDp = array.iterator();
+        Iterator itDp = array.iterator();
 
         while (itDp.next()) {
-            Deposit deposit = itDp.getDeposit();
+            Deposit deposit = (Deposit)itDp.current();
             System.out.println(deposit);
             System.out.println(deposit.getName());
             System.out.println(deposit.getMoney());
