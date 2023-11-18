@@ -1,13 +1,14 @@
 package prac;
 
 public class AddToBank extends Bank {
+    private int balance;
     private String fund;
     private Bank fundBak;
 
     public AddToBank(int balance, String fund) {
         super(balance);
         this.fund = fund;
-        this.fundBak = new Bank(0);
+        this.fundBak = new Bank(balance);
     }
     
     public void fundWork(BankOperInterface bankInterface){

@@ -34,19 +34,20 @@ public class App {
         // // publication.print(display);
         // publication.print(display2);
 
-        Bank bank = new Bank(10000);
+        // Bank bank = new Bank(10000);
 
-        BankOperInterface bankOper1 = new DepositOper();
-        bankOper1.work(bank, 5000);
-        bankOper1.balancePrint();
+        // BankOperInterface bankOper1 = new DepositOper();
+        // bankOper1.work(bank, 5000);
+        // bankOper1.balancePrint();
         
-        BankOperInterface bankOper2 = new WithdrawOper();
+        // BankOperInterface bankOper2 = new WithdrawOper();
 
-        bankOper2.work(bank, 3000);
-        bankOper2.balancePrint();
+        // bankOper2.work(bank, 3000);
+        // bankOper2.balancePrint();
 
         // bank.work(new WithdrawOper(), 2000);
 
-        AddToBank aBank = new AddToBank(bank, "A");
+        AddToBank aBank = new AddToBank(20000, "A");
+        aBank.fundWork(new DepositOper());
     }
 }
