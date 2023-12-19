@@ -16,7 +16,6 @@ public class App {
         sub1.add(new File("SB.txt", 340));
 
         root.list();
-
         
     }
 }
