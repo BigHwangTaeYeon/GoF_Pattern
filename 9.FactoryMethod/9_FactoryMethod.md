@@ -22,6 +22,6 @@ ItemFactory                     Sword           Shield          Bow
 인터페이스와 구현은 별도의 패키지를 만들어 사용할 수 있다.
 
 추가
-FoodFactory 만들어 Factory를 상속받고, 
+FoodFactory 만들어 Factory를 상속받고,
 Bread class, Milk class를 만들어 Item을 상속받는다.
 FoodFactory는 Bread와 Milk를 생성할 수 있도록 하면 된다.

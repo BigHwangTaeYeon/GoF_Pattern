@@ -1,6 +1,5 @@
 public class App {
     public static void main(String[] args) throws Exception {
-
         Factory factory = new ItemFactory();
 
         Item item1 = factory.create("sword");
@@ -12,7 +11,7 @@ public class App {
         Item item4 = factory.create("sword");
         if(item4 != null) item4.use();
         Item item5 = factory.create("sword");
-        if(item5 != null) item5.use();
+        if (item5 != null) item5.use();
         
         factory.create("shield");
         factory.create("shield");
@@ -25,6 +24,5 @@ public class App {
         factory.create("bow");
         factory.create("bow");
         factory.create("bow");
-        
     }
 }
