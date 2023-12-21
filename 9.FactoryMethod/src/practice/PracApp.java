@@ -16,7 +16,10 @@ public class PracApp {
 
         System.out.println(car.getMoney());
         System.out.println(car.getQuantity());
-
         
+        car.sell(1);
+
+        Machine train = carFactory.createMachine("train", 50000, 5);
+
     }
 }

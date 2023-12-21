@@ -1,17 +1,17 @@
 package practice.machine;
 
-public class CarMachine implements Machine {
+public class Airplane implements Machine {
     private int money;
     private int quantity;
-    private CarMachine() {}
-    private static class instance{
-        private static final CarMachine carMachine = new CarMachine();
+    private Airplane() {}
+    private static class instance {
+        private static final Airplane airplane = new Airplane();
     }
 
-    public static CarMachine getInstance(int money, int quantity) {
-        instance.carMachine.money = money;
-        instance.carMachine.quantity = quantity;
-        return instance.carMachine;
+    public static Airplane getInstance(int money, int quantity) {
+        instance.airplane.money = money;
+        instance.airplane.quantity = quantity;
+        return instance.airplane;
     }
 
     @Override
@@ -33,5 +33,5 @@ public class CarMachine implements Machine {
     public void make(int quantity) {
         this.quantity++;
     }
-
+    
 }

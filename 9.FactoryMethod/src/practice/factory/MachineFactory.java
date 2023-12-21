@@ -1,7 +1,9 @@
 package practice.factory;
 
+import practice.machine.Airplane;
 import practice.machine.CarMachine;
 import practice.machine.Machine;
+import practice.machine.TrainMachine;
 
 public class MachineFactory extends Factory {
 
@@ -10,6 +12,10 @@ public class MachineFactory extends Factory {
         switch (instance) {
             case "car":
                 return CarMachine.getInstance(money, quantity);
+            case "train":
+                return TrainMachine.getInstance(money, quantity);
+            case "airplane":
+                return Airplane.getInstance(money, quantity);
         }
         return null;
     }

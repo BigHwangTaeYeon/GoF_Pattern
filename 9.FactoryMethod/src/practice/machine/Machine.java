@@ -5,7 +5,7 @@ public interface Machine {
 
     int getQuantity();
 
-    void sell(int money);
+    void sell(int quantity);
 
     void make(int quantity);
 }
